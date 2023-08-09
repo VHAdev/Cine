@@ -1,0 +1,91 @@
+@import url(reset.css);
+@import url(global.css);
+@import url(components/_navigator.css);
+@import url(components/_pills.css);
+@import url(components/_link-button.css);
+@import url(components/_gallery.css);
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-flow: row nowrap;
+}
+
+.wrapper video {
+    position: fixed;
+    width: 120%;
+}
+
+.wrapper .menu-column {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.wrapper .main-content {
+    height: 100%;
+    width: 100%;
+    padding-left: 130px;
+    position: relative;
+}
+
+.wrapper .main-content__top {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.wrapper .main-content__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.wrapper .main-content .movie-title img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
+    width: 20%;
+}
+
+
+.wrapper .main-content__top .sinopse {
+    background-color: rgba(0, 0, 0, .7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.wrapper .main-content__top .sinopse .sinopse__text p{
+    color: white;
+    line-height: 170%;
+}
+
+.wrapper .main-content__top .sinopse .pills{
+    margin-bottom: 20px;
+}
+
+.wrapper .main-content .links{
+    padding: 20px;
+    padding-left: 0;
+}
+
+.wrapper .main-content .links ul{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.optitle {
+    width: 200%;
+}
